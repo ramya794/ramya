@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 460" width="380" height="460">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1533"/>
+      <stop offset="50%" stop-color="#171027"/>
+      <stop offset="100%" stop-color="#0f0a1a"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5b942"/>
+      <stop offset="100%" stop-color="#eab308"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="50%" stop-color="#f5b942"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="380" height="460" rx="28" fill="url(#bgGrad)"/>
+  <rect width="378" height="458" x="1" y="1" rx="27" fill="none" stroke="#2f2350" stroke-width="2"/>
+
+  <!-- Ambient Glow -->
+  <circle cx="190" cy="180" r="140" fill="url(#glow)"/>
+
+  <!-- Decorative Orbit Ring -->
+  <circle cx="190" cy="175" r="95" fill="none" stroke="url(#ringGrad)" stroke-width="3" stroke-dasharray="6 4" opacity="0.6"/>
+
+  <!-- Avatar Circle -->
+  <circle cx="190" cy="175" r="80" fill="url(#primaryGrad)"/>
+
+  <!-- Avatar Person Icon / Silhouette -->
+  <g fill="#f3eefc" opacity="0.95">
+    <!-- Head -->
+    <circle cx="190" cy="148" r="32"/>
+    <!-- Shoulders / Torso with clipping or smooth arc -->
+    <path d="M 132 232 C 132 195 152 188 190 188 C 228 188 248 195 248 232 C 235 245 214 253 190 253 C 166 253 145 245 132 232 Z"/>
+  </g>
+
+  <!-- RM Monogram Tag Badge -->
+  <g transform="translate(190, 240)">
+    <rect x="-35" y="-14" width="70" height="28" rx="14" fill="#1e1533" stroke="url(#goldGrad)" stroke-width="2"/>
+    <text x="0" y="5" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="13" font-weight="700" fill="#f5b942">RM</text>
+  </g>
+
+  <!-- Name & Title -->
+  <text x="190" y="325" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="24" font-weight="700" fill="#f3eefc">Ramya Mantri</text>
+  <text x="190" y="355" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="12" font-weight="500" fill="#f5b942" letter-spacing="1.5">DIGITAL MARKETING &amp; AI</text>
+  <text x="190" y="378" text-anchor="middle" font-family="'Poppins', sans-serif" font-size="11" font-weight="400" fill="#b4a9cc">Portfolio Profile</text>
+
+  <!-- Accent dots -->
+  <circle cx="70" cy="70" r="3" fill="#a855f7" opacity="0.5"/>
+  <circle cx="310" cy="90" r="2.5" fill="#f5b942" opacity="0.6"/>
+  <circle cx="50" cy="390" r="2.5" fill="#f5b942" opacity="0.4"/>
+  <circle cx="330" cy="400" r="3" fill="#a855f7" opacity="0.5"/>
+</svg>
